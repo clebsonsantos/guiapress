@@ -1,0 +1,19 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'start'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v12.18.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle guiapress@1.0.0~prestart: guiapress@1.0.0
+6 info lifecycle guiapress@1.0.0~start: guiapress@1.0.0
+7 verbose lifecycle guiapress@1.0.0~start: unsafe-perm in lifecycle true
+8 verbose lifecycle guiapress@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\projetosdev\formacao-node\guiapress\node_modules\.bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\php-7;C:\Users\Clebson Santos\AppData\Local\Microsoft\WindowsApps;C:\Users\Clebson Santos\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Clebson Santos\AppData\Roaming\npm;C:\Users\Clebson Santos\AppData\Roaming\Composer\vendor\bin;C:\php;C:\Program Files\MySQL\MySQL Server 8.0\bin;
+9 verbose lifecycle guiapress@1.0.0~start: CWD: C:\projetosdev\formacao-node\guiapress
+10 silly lifecycle guiapress@1.0.0~start: Args: [ '/d /s /c', 'nodemon index.js' ]
+11 timing npm Completed in 1039300ms
+12 error cb() never called!
+13 error This is an error with npm itself. Please report this error at:
+14 error <https://npm.community>
