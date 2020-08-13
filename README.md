@@ -4,10 +4,10 @@
 
 ![Badge](https://img.shields.io/static/v1?label=NodeJs&message=Interpreter&color=brightgreen)
 ![Badge](https://img.shields.io/static/v1?label=Javascript&message=language&color=yellow)
-![Badge](https://img.shields.io/static/v1?label=TinyMce&message=Types&color=blue)
+![Badge](https://img.shields.io/static/v1?label=TinyMce&message=Editor&color=blue)
 
 
-
+## ⚠ Projeto ainda não finalizado!
 
 ## Descrição do projeto:
 
@@ -29,7 +29,7 @@ $ git clone https://github.com/clebsonsantos/guiapress.git
 ### 💻 Rode o Project 
 
 ```bash
-# Vá para a pasta web
+# Vá para a pasta
 $ cd guiapress
 
 # Instale as depedencias
@@ -39,6 +39,7 @@ $ npm install
 $ npm start
 ```
 Acesse: http://localhost:8080/ para ver o resultado.
+Acesse: http://localhost:8080/admin/categories para ver o resultado do painel administrativo.
 
 Para conecção com o banco de dados foi utilizado o [Mysql Workbenck](https://dev.mysql.com/downloads/workbench/).
 
