@@ -39,12 +39,13 @@ $ npm install
 $ npm start
 ```
 Acesse: http://localhost:8080/ para ver o resultado.
+
 Acesse: http://localhost:8080/admin/categories para ver o resultado do painel administrativo.
 
 Para conecção com o banco de dados foi utilizado o [Mysql Workbenck](https://dev.mysql.com/downloads/workbench/).
 
 
-# :closed_book: Licencia
+# :closed_book: Licença
 
 
 Feito com 💙 por  [Clebson Santos](https://github.com/clebsonsantos) 🚀.
