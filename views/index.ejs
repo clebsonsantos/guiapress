@@ -3,26 +3,35 @@
 
 <body>
     <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Bem vindo</h1>
+        
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <h1 class="display-4 font-italic">Bem vindo</h1>
             <p class="lead">Este é um simples blog.</p>
             <hr class="my-4">
             <p>Descrição detalhada...</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+            <a class="text-white font-weight-bold" href="#" role="button">Continue lendo...</a>
           </div>
         <hr>
+        <div class="row mb-2">
         <% articles.forEach(article => { %>
-            <div class="card">
-                <div class="card-header">
-                    <h2><%= article.title %></h2>
+            <div class="col-md-6">
+              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <h3 class="mb-0"><%= article.title %></h3>
+                  <strong class="d-inline-block mb-2 text-primary"><%= article.categoryId %></strong>
+
+                 <!--  <div class="mb-1 text-muted">Nov 12</div> -->
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="/<%= article.slug %>" class="stretched-link">Continue lendo...</a>
                 </div>
-                <div class="card-body">
-                    <a href="/<%= article.slug %>" class="btn btn-success"> Ler artigo</a>
-                </div>
+                
+              </div>
             </div>
-           <br>
         <% }) %>
-        
+          </div>
+        </div>
+
+        <!---->
     </div>
 </body>
   
