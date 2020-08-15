@@ -2,16 +2,26 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const connection = require("./database/database");
+const session = require("express-session");
 //const path = require("path");
 
 const categoriesController = require("./categories/CategoriesController");
 const articlesController = require("./articles/ArticlesController");
+const usersController = require("./users/UsersController");
+
 
 const Article = require("./articles/Article");
 const Category = require("./categories/Category");
+const User = require("./users/User");
+
 // view engine
 
 app.set('view engine', 'ejs'); 
+// sessions
+app.use(session({
+    secret: "qualquercoisa",
+    cookie: {maxAge: 30000}
+}))
 //app.set('views', path.join(__dirname, 'views'));
 
 
@@ -35,13 +45,15 @@ connection
 // Controllers
 app.use("/", categoriesController);
 app.use("/", articlesController);
+app.use("/", usersController);
 
 
 app.get("/", (req, res) =>{
     Article.findAll({
         order: [
             ['id','DESC']
-        ]
+        ],
+        limit: 4
     }).then((articles)=>{
         Category.findAll().then(categories => {
               res.render("index", { articles: articles, categories: categories });
