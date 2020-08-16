@@ -1,17 +1,40 @@
 <p align="center" >
-    <img src="./github/logo.png" width="200">
+    <img src="./github/logo.png" width="280">
 </p>
 
 ![Badge](https://img.shields.io/static/v1?label=NodeJs&message=Interpreter&color=brightgreen)
 ![Badge](https://img.shields.io/static/v1?label=Javascript&message=language&color=yellow)
 ![Badge](https://img.shields.io/static/v1?label=TinyMce&message=Editor&color=blue)
+![Badge](https://img.shields.io/static/v1?label=BcryptJS&message=Hash&color=orange)
 
 
-## ⚠ Projeto ainda não finalizado!
 
 ## Descrição do projeto:
 
-<p> O Guiapress é um blog simples contruido em NodeJs integrado com Mysql </p>
+<p> O Guiapress é um blog simples contruido em NodeJs integrado com TinyMce, que é um editor de texto online muito versátil.</p>
+<p> Com ele é possível publicar e editar artigos e criar novas categorias, contanto que esteja autenticado no painel admin</p>
+<p> Acessando a rota http://localhost/users/create é possível criar um usuário para se aprofundar no painel administrativo</p>
+<p> Foi utilizado o sistema de "hash" com a biblioteca 'bcryptjs', possibilitando um login seguro para os usuários.</p>
+
+
+
+## Screens
+
+- Home
+    <img src="./github/home.jpg" >
+
+- Articles
+    <img src="./github/articles.jpg" >
+
+- Categories
+    <img src="./github/categories.jpg" >
+
+- Administrator login
+    <img src="./github/login.jpg" >
+
+- Editing articles
+    <img src="./github/edit-articles.jpg" >
+
 
 ## Tecnologias:
 
@@ -19,6 +42,7 @@
 - Mysql
 - Bootstrap
 - Tinymce
+- bcryptjs
 
 # :construction_worker: Como rodar
 ```bash
@@ -39,8 +63,8 @@ $ npm install
 $ npm start
 ```
 Acesse: http://localhost:8080/ para ver o resultado.
+Acesse: http://localhost:8080/login para se conectar.
 
-Acesse: http://localhost:8080/admin/categories para ver o resultado do painel administrativo.
 
 Para conecção com o banco de dados foi utilizado o [Mysql Workbenck](https://dev.mysql.com/downloads/workbench/).
 

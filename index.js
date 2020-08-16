@@ -20,7 +20,7 @@ app.set('view engine', 'ejs');
 // sessions
 app.use(session({
     secret: "qualquercoisa",
-    cookie: {maxAge: 30000}
+    cookie: {maxAge: 300000000}
 }))
 //app.set('views', path.join(__dirname, 'views'));
 
