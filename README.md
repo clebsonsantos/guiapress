@@ -13,7 +13,6 @@
 
 <p> O Guiapress é um blog simples contruido em NodeJs integrado com TinyMce, que é um editor de texto online muito versátil.</p>
 <p> Com ele é possível publicar e editar artigos e criar novas categorias, contanto que esteja autenticado no painel admin</p>
-<p> Acessando a rota http://localhost/users/create é possível criar um usuário para se aprofundar no painel administrativo</p>
 <p> Foi utilizado o sistema de "hash" com a biblioteca 'bcryptjs', possibilitando um login seguro para os usuários.</p>
 
 
@@ -62,8 +61,13 @@ $ npm install
 # Rode a aplicação
 $ npm start
 ```
+
 Acesse: http://localhost:8080/ para ver o resultado.
+
 Acesse: http://localhost:8080/login para se conectar.
+
+Acessando a rota http://localhost/users/create é possível criar um usuário para se aprofundar no painel administrativo
+
 
 
 Para conecção com o banco de dados foi utilizado o [Mysql Workbenck](https://dev.mysql.com/downloads/workbench/).
